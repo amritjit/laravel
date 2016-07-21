@@ -29,8 +29,4 @@ class User extends Authenticatable
         $this->token = null;
         $this->save();
      }
-
-     public function recipes() {
-        return $this->hasMany('App\Models\Recipe');
-     }
 }
