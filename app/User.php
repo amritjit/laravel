@@ -21,6 +21,19 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token','token'
     ];
+     public static function boot()
+     {
+        parent::boot();
+        static::creating(function ($user) {
+            $user->token = str_random(30);
+        });
+     }
+      public function confirmEmail()
+     {
+        $this->verified = true;
+        $this->token = null;
+        $this->save();
+     }
 }

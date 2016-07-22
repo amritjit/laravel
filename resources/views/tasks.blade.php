@@ -9,17 +9,29 @@
     <div class="panel-body">
         <!-- Display Validation Errors -->
         @include('common.errors')
+        <ul>
+            @forelse($tasks as $task)
+                    <li>{{{ $task->task_name }}}</li>
+            
+            @empty
+            <li>No record found</li>
+            @endforelse
+        </ul>
 
         <!-- New Task Form -->
-        <form action="{{ url('task') }}" method="POST" class="form-horizontal">
-            {{ csrf_field() }}
-
+@if(auth()->check())
+{!! Form::open(['route' => 'amrit.task.store', 'class' => 'form-horizontal']) !!}
             <!-- Task Name -->
-            <div class="form-group">
+            <div class="form-group{{ $errors->has('task_name') ? ' has-error' : '' }}">
                 <label for="task" class="col-sm-3 control-label">Task</label>
-
+{!! Form::select('name_of_dd',$select,'3') !!}
                 <div class="col-sm-6">
-                    <input type="text" name="name" id="task-name" class="form-control">
+                    <input type="text" name="task_name" id="task-name" class="form-control">
+                    @if ($errors->has('task_name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('task_name') }}</strong>
+                                    </span>
+                    @endif
                 </div>
             </div>
 
@@ -31,7 +43,8 @@
                     </button>
                 </div>
             </div>
-        </form>
+        {!! Form::close() !!}
+@endif
     </div>
 
     <!-- TODO: Current Tasks -->

@@ -1,0 +1,187 @@
+/*-----------------------Responsive Css-----------------*/
+
+@media only screen and ( max-width:1200px) {
+	.navCategories .navbar-default .navbar-nav li { padding:0 6px;}
+	.navCategories .navbar-default .navbar-nav  li a {padding:0px 8px;}
+	.captionBG h1 { font-size:35px;}
+	.captionBG p { font-size:20px;}
+	.captionBG { width:530px;}
+	.thumb { min-height:inherit; min-width:inherit;}
+	.serviceThumb { min-height:inherit;}
+	.standardThumb { max-width:455px; min-height:222px;} 
+	.container { width:100%;} 
+	.dthumb , .video.popup { min-height:inherit;}
+	#inbox { overflow-x:scroll; float:left; width:100%;}
+	.table-responsive { width:980px;}
+	p.slide { display:block; text-align:center;}
+	.pateintImg { max-height:inherit; max-width:inherit;}
+	.navbar-default .navbar-nav > li { margin:0 12px;}
+
+}
+
+@media only screen and ( max-width:1024px) {
+	.tabContent .left { margin-right:0px;}
+	.right.dashboard { width:65%;}
+}
+
+@media only screen and ( max-width:990px) {
+	.navCategories .navbar { float:left;}
+	.navCategories  { padding:15px 0px;}
+	.banner .carousel-caption {left:25%; right:25%; padding:20px; bottom:40px;}
+	.banner .carousel-caption h1 {font-size:28px;}
+	.banner .carousel-caption p {font-size:16px; }
+	.serviceInfo .title { font-size:16px;}
+	ul.footerListing li span { margin:0 10px;}
+	.highlightedText { width:100%; margin-bottom:30px;}
+	.fullWidth label { width:48%;}
+	.fullWidth .labelInfo { width:50%;}
+	.lightGrey .box , .darkGrey .box { float:left; width:100%;}
+	.membership { margin-bottom:15px;}
+	.box.thumBox { width:100% !important; text-align:center;}	
+	.information h6 a { font-size:16px;line-height:20px;max-height:40px;}
+	.paymentPage .twocolumn .left {width:34%;margin-right:5%;}
+.paymentPage .twocolumn .right {width:61%;}
+
+}
+
+ 
+
+@media only screen and ( max-width:880px) {
+	.right.dashboard { width:60%;}
+	.tabContent .left { width:36%; margin-right:20px;}
+	.pateintImg > img {float: left;height: auto;width: 100%;}
+	ul.footerListing li a {font-size: 13px;}
+	ul.footerListing li:last-child a {font-size: 15px;}
+	}
+ 
+
+
+
+
+@media only screen and ( max-width:767px) {
+	.navCategories .navbar { width:100%;}
+	.nav.navbar-nav  { border:2px solid #0DB6E0;}
+	.navCategories .navbar-collapse { float:none; padding:0 15px; width:100%; box-sizing:border-box;}
+	.navbar-header { background:#0DB6E0;}
+	p { font-size:14px;}
+	.doctordetail a.endconsulting { font-size:14px;}
+	.navCategories .navbar-default .navbar-nav li { margin-bottom:10px;}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover{ background:#7fb625; color:#ffffff;}
+	.navbar { float:left; width:100%; margin-bottom:8px;}
+	.navbar-default .navbar-nav > li:hover > a { color:#18a2c8; border-bottom:0px solid #18a2c8;}
+	.navbar-default .navbar-nav > li > a { padding:0 0 0 0;}
+	.navbar-default .navbar-nav > li  { margin:20px;}
+	h1 span { font-size:35px;}
+	.imgBlockBG { margin-top:15px;}
+	.thumb { float:left; width:100%; text-align:center; border:none; margin:10px 0px 20px 0;}
+	.thumb img { float:none; display:inline-block; max-width:100%; width:auto; border:1px solid #e6e6e6;}
+	.serviceBlock { margin-bottom:20px;}
+	ul.footerListing  { width:100%; text-align:center;}
+	ul.footerListing li  { float:none; display:inline-block;}
+	.bottomBorder { border-bottom:1px solid #e6e6e6; padding:0 0 15px 0;}
+	p.copyright  { text-align:center;}
+	ul.bottomList { float:left; width:100%; text-align:center; margin:10px 0px 0 0;}
+	ul.bottomList li { float:none; display:inline-block; width:100%; margin:0 0 10px 0;}
+	ul.bottomList li a { margin:0px;}
+	.standardThumb.fltrht { float:left; margin-left:0px;}
+	.standardThumb { max-width:inherit; min-height:inherit; text-align:center; margin-right:0px;}
+	.standardThumb img { float:none; display:inline-block;}
+	.smallThumbBlock { margin-bottom:30px;}
+	.smallThumb { height:auto;}
+	.smallThumb img { height:auto; float:left; width:100%;}
+	.block { float:none; } 
+	.twocolumn .left { margin-right:30px; width:30%;}
+	.tabContent .left { width:35%; margin-right:20px !important; }
+	.table-responsive { border:0px solid #000 !important;} 
+	.videosBlock { float:none; width:auto;} 
+	.video { margin:15px 0px;}
+	.form02 .form-group {padding-left:15px;padding-right:15px;}
+	.form02.form-horizontal .control-label {padding-left:0}
+	.clinicsArea .smallImg {margin-bottom:15px;}
+	.paymentPage .twocolumn .left {width:30%;margin-right:5%;}
+.paymentPage .twocolumn .right {width:65%;}
+
+	
+}
+@media only screen and ( max-width:640px) {
+	.captionBG { padding:20px; width:420px;}
+	.captionBG h1 { font-size:28px;}
+	.captionBG p { font-size:16px;}
+	h1 span { padding:0 30px;}
+	.twocolumn .left { width:100%; margin:0 0 30px 0; text-align:center;}
+	.dthumb img { float:none; display:inline-block; width:auto; max-height:100%;}
+	.twocolumn .right { width:100%; float:left;}
+	.chatInfo { border-left:0px solid #000; padding-top:25px; padding-left:30px;}
+	.fullength { float:left; width:100%;}
+	.paymentPage .twocolumn .left, .paymentPage .twocolumn .right {width:100% !important;}
+	.twocolumn .left .button {width:100%;}
+	.searchInput {width:100%;max-width:100%;}
+    .notification-dropdown {width: auto !important;}
+}
+@media only screen and ( max-width:560px) {
+	.captionBG { display:none;}
+	ul.footerListing li a { font-size:14px;}
+	ul.footerListing li span { font-size:14px;}
+	ul.rightListing li a { font-size:14px;}
+	ul.rightListing li  { padding:13px;}
+	.highlightedText p { font-size:20px;}
+	.smallThumbBlock .fullblock { float:left; width:100% !important; text-align:center; }
+	.smallThumb { float:none; display:inline-block; margin-bottom:15px;}
+	.bluebttn { float:none; display:inline-block; }
+	#innerNav ul {float: left;width: 100%;}
+	#innerNav ul li {float: left;margin: 5px 0 0 0;width: 100%;}
+	#innerNav ul li a { float:left; width:100%; box-sizing:border-box;}
+	.box.thumBox { width:100% !important; float:left !important;}
+}
+
+@media only screen and ( max-width:480px){
+	.fullvideo { width:100% !important;}
+	.video.popup a { display:inherit; }
+	.video.popup a .popthumb { float:left; width:100%; text-align:center;}
+	.video.popup a .popthumb img   { float:none; display:inline-block; max-width:100%; }
+	.modal-body iframe { height:auto;} 
+	#detailInfo { padding:30px 15px;}
+	h1 span { font-size:20px; padding:0 10px;}	
+	h1 { background-position:left 32px;}
+	ul.footerListing li span {margin: 0 5px;}
+	ul.footerListing li a {font-size: 11px;}
+	ul.footerListing li:last-child a {font-size: 12px;}
+}
+@media only screen and ( max-width:460px) {
+	.fullblock { width:100%;}
+	a.logo { text-align:center; width:100%; margin-bottom:5px;}
+	a.logo img { float:none; display:inline-block; width:60%;}
+	.loginInfo { float:left; width:100%; text-align:center;}
+	.loginInfo a { float:none; display:inline-block;}
+	
+	.fullWidth label , .fullWidth .labelInfo{ font-size:14px;}
+	.loginOut { float:left; width:100%; text-align:center; }
+	.loginOut ul { float:none; display:inline-block;margin-top:10px;}
+	.doctorInfo { float:left; width:100%; margin:15px 0px 0 0; }
+ 
+	.docName { float:left; width:100%; margin-bottom:10px;}
+	.rightInfo { float:left; width:100%;}
+	.messageBlog textarea { font-size:14px; line-height:16px;}
+	a.upload , .messageBlog .submit { padding:10px;}
+	.loginOut .dropdown-menu {right:inherit;left:0;}	
+}
+@media only screen and ( max-width:360px) {
+	.nav > li > a { padding:10px !important; }
+	a.compose { font-size:14px; padding:4px 9px;}
+	a.upload , .messageBlog .submit  { float:left; width:100%; text-align:center; margin-left:0px;}
+	
+	
+	
+	
+	
+}
+/*17-9-15*/
+@media only screen and ( max-width:660px) {
+     .forgpwd{width:100%;}
+     .widthInputForPwd{width:100%;}
+}
+@media only screen and ( max-width:410px) {
+     .fontCheck{font-size:10px;}
+     
+}
+

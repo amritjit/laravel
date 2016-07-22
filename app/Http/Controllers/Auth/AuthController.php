@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Models\User;
+//use App\User;
 use Validator;
+use App\Mailers\Confirm\UserMailer;
 use App\Http\Controllers\Controller;
+
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
@@ -70,25 +73,31 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-    // public function register(Request $request)
-    // {
-    //     $validate  = Validator::make($data, [
-    //         'name' => 'required|max:255',
-    //         'email' => 'required|email|max:255|unique:users',
-    //         'password' => 'required|min:6|confirmed',
-    //     ],['name.required' => '']);
+     public function register(Request $request, UserMailer $mailer)
+     {
+      $validate  = Validator::make($request->all(), [
+             'name' => 'required|max:255',
+             'email' => 'required|email|max:255|unique:users',
+             'password' => 'required|min:6|confirmed',
+         ],['name.required' => '']);
 
-    //     if($validate->fails())
-    //     {
-    //         return redirect()->back()
-    //         ->withErrors($validate)->withInput();
-    //     }
-
-    //      User::create([
-    //         'name' => $request->input('name'),
-    //         'email' => $request->input('email'),
-    //         'password' => bcrypt($request->input('password')),
-    //     ]);
-    //      return redirect()->back();
-    // }
+         if($validate->fails())
+         {
+             return redirect()->back()
+             ->withErrors($validate)->withInput();
+                  }
+       $user =  User::create([
+        'name' => $request->input('name'),
+        'email' => $request->input('email'),
+             'password' => bcrypt($request->input('password')),
+         ]);
+         $mailer->sendEmailConfirmationTo($user);  
+          return redirect()->back()->with('status','Please verify your email Address'); 
+     }
+  public function confirmEmail($token)
+     {
+        User::whereToken($token)->firstOrFail()->confirmEmail();        
+        return redirect('login')->with('status','You are now confirmed. Please login.');
+     } 
+     
 }
